@@ -31,7 +31,7 @@ Bhargavi_Podili_Thesis_Code_Repo/
 This research work presented in this chapter is published and can be referenced at:
 
 **"Seismic Zone Map for India Based on Cluster Analysis of Uniform Hazard Response Spectra"**  
-Google Scholar link: [View Publication](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1C7dL7YAAAAJ&citation_for_view=1C7dL7YAAAAJ:WF5omc3nYNoC)
+Publication link: [View Publication](https://link.springer.com/article/10.1007/s00024-023-03329-4)
 
 
 ### Chapter 3: A Vertical-to-Horizontal Spectral Ratio Model for India
