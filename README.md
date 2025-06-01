@@ -27,23 +27,22 @@ Bhargavi_Podili_Thesis_Code_Repo/
 
 ## Chapter Index
 
-### Chapter 1: Literature Review
 
 ### Chapter 2: Seismic Zone Map for India Based on Cluster Analysis of Uniform Hazard Response Spectra
-This chapter corresponds to the methodology described in:
+This research work presented in this chapter is published and can be referenced at:
 
 **"Seismic Zone Map for India Based on Cluster Analysis of Uniform Hazard Response Spectra"**  
 Google Scholar link: [View Publication](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1C7dL7YAAAAJ&citation_for_view=1C7dL7YAAAAJ:WF5omc3nYNoC)
 
 
 ### Chapter 3: A Vertical-to-Horizontal Spectral Ratio Model for India
-This chapter corresponds to the methodology described in:
+This research work presented in this chapter is published and can be referenced at:
 
 **"A Vertical-to-Horizontal Spectral Ratio Model for India"**  
 Google Scholar link: [View Publication](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1C7dL7YAAAAJ&citation_for_view=1C7dL7YAAAAJ:IjCSPb-OGe4C)
 
 **Folder contents:**
-- `data/`: Provided in Appendix tables A1, A2 and A3 of thesis
+- `Model source data/`: Refer to Appendix tables A1, A2 and A3 of thesis
 - `code/`: MATLAB script `BSR_2022.m` for computing V/H spectral ratio given magnitude, distance, depth, and site class
 
 **To run the code:**
@@ -62,27 +61,44 @@ Google Scholar link: [View Publication](https://scholar.google.com/citations?vie
   - `VbyHSa`: V/H spectral ratio at each period
 
 ### Chapter 4: Alternative Regional Ground Motion Models for Western Himalayas
-This chapter corresponds to the regional ground motion modeling presented in:
+This research work presented in this chapter is published and can be referenced at:
 
 **"Alternative Regional Ground Motion Models for Western Himalayas"**  
 Google Scholar link: [View Publication](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1C7dL7YAAAAJ&citation_for_view=1C7dL7YAAAAJ:W7OEmFMy1HYC)
 
 **Folder contents:**
-- `data/`: Provided in Appendix tables A1, A2 and A3 of thesis
-- `code/`: MATLAB or Python scripts for regression model development, residual analysis, mixed-effects modeling
+- `Model source data/`: Refer to Appendix tables A1, A2 and A3 of thesis
+- `code/`: MATLAB scripts for regional horizontal ground motion prediction:
+  - `BRnsc_2023.m`: Combined NSC-HIM regional model
+  - `BRhybrid_2022.m`: Hybrid model developed from PSHA-compatible curves
 
-**Data files:**
+**Model Data:**
 - `Models_SaH.xlsx` contains the regression input and fitted outputs for horizontal ground motion models used in Chapter 4.
 - `Models_VbyH.xlsx` includes the corresponding V/H spectral ratio data and model estimates for comparison and residual analysis.
 
+**To run the models:**
+```matlab
+[T, Sa1] = BRnsc_2023(Mw, R, H, Sc);    % NSC-HIM model
+[T, Sa2] = BRhybrid_2022(Mw, R, H, Sc); % Hybrid model
+```
+- Inputs:
+  - `Mw`: Moment magnitude
+  - `R`: Source-to-site distance (km)
+  - `H`: Hypocentral depth (km)
+  - `Sc`: Site class (0=rock, 1=firm, 2=soft)
+- Outputs:
+  - `T`: Periods (s)
+  - `Sa`: Spectral acceleration (g)
+
+
 ### Chapter 5: Spectral Ground Motion Models for Himalayas using Transfer Learning Technique
-This chapter corresponds to the transfer learning-based spectral modeling presented in:
+This research work presented in this chapter is published and can be referenced at:
 
 **"Spectral Ground Motion Models for Himalayas using Transfer Learning Technique"**  
 Google Scholar link: [View Publication](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1C7dL7YAAAAJ&citation_for_view=1C7dL7YAAAAJ:Se3iqnhoufwC)
 
 **Folder contents:**
-- `data/`: Tables in Appendix, plus network normalization parameters stored internally
+- `data/`: Network parameters stored internally
 - `code/`: Contains model definition, transfer learning, and prediction functions
 
 **Code files:**
@@ -101,7 +117,7 @@ Google Scholar link: [View Publication](https://scholar.google.com/citations?vie
 ```
 
 ### Chapter 6: A Deep Learning Prediction Model for On-Site Earthquake Early Warning System in India
-This chapter corresponds to the early warning system proposed in:
+This chapter proposes a deep learning model for application in the EEWS, as discussed in:
 
 **"A Deep Learning Prediction Model for On-Site Earthquake Early Warning System in India"**  
 *Under review (Round 2), Journal of Seismology*
@@ -114,23 +130,24 @@ This chapter corresponds to the early warning system proposed in:
 ```python
 python deployment.py
 ```
-This executes a test input with 8 EEW features (`PGA`, `PGD`, `Fp`, `Tsig`, `Ia`, `CAV`, `vs30`, `dir`) and returns predicted outputs such as ground motion metrics.
+This executes a test input with 8 EEW features (`PGA`, `PGD`, `Fp`, `Tsig`, `Ia`, `CAV`, `vs30`, `dir`) corresponding to the 3s P-wave of the time history and returns the spectral accelratio of the entire ground motion time history.
 
 ### Chapter 7: Estimating Deterministic Seismic Source Parameters for Varied Tectonics, Fault Mechanisms and Regions
 This chapter focuses on building a consistent parameter dataset for deterministic seismic source modeling across regions, based on tectonic regime, faulting mechanism, and observed seismicity.
 
-**Under review, Geophysical Journal International**
+**"Estimating Deterministic Seismic Source Parameters for Varied Tectonics, Fault Mechanisms and Regions"**  
+*Under review, Geophysical Journal International*
 
 **Folder contents:**
-- `DataBase_Meta.xlsx`: Metadata for curated earthquake database across Indian tectonic regimes
-- `Predictions/`: Contains model-generated source parameters and MATLAB scripts used for estimating source energy (SE) and slip
-- `Data2.mat`, `ModelF.mat`, `Total274.mat`: MATLAB data files used to generate predictions and validate fault-based regression outputs
+- `DataBase_Meta.xlsx`: Metadata for curated source parameter database corresponding to the FFMs of SRCMOD
+- `Predictions/`: Contains model-generated data and MATLAB scripts used for estimating seismic regions (SE) and various source parameters
+- `Data2.mat`, `ModelF.mat`, `Total274.mat`: MATLAB data files used to generate predictions and validate regression outputs
 
 **Code files:**
-- `FEtoSE.m`: Function to map fault entity IDs to source energy categories
-- `predictSP.m`: Core function for predicting source parameters using tectonic region, mechanism, and location
-- `SPest_example.m`: Demonstrates usage of `predictSP` for a range of magnitudes and fixed coordinates to plot Leff vs Mw
-
+- `FEtoSE.m`: Function to obtain the seismic region numbers
+- `predictSP.m`: Core function for predicting source parameters using tectonic region, mechanism, location, magnitude and depth
+- `SPest_example.m`: Demonstrates usage of `predictSP` for a range of magnitudes and coordinates
+  
 **Usage note:**
 - `predictSP` requires at minimum Mw, Lat, Lon.
 - Optional parameters: `tectonics`, `fault mechanism`, `region`
@@ -150,32 +167,25 @@ This chapter focuses on building a consistent parameter dataset for deterministi
   - `Dstd`: Standard deviation of the slip distribution, in m
 - `SourceData` includes:
   - `Mw`, `Lat`, `Lon`, `Tectonics`, `FM`, `Region`
-  - Used values or inferred defaults
+    
 
 ### Chapter 8: A Physics-Informed GAN Model for Estimating the Stochastic Slip Distribution
-This chapter includes code and models used for developing a Conditional Generative Adversarial Network (cGAN) to estimate stochastic fault slip distributions based on physics constraints.
+This chapter includes codes used for developing the cGAN model to estimate PSD of stochastic fault slip distributions, based on physics constraints.
 
 **Folder contents:**
 - `train.py`: GAN training script integrating physics-informed loss functions
-- `generator.py`, `discriminator.py`: Model architecture definitions with symmetry enforcement
-- `losses.py`: Custom loss functions including power-law decay, symmetry, and peak-smoothness balance
-- `evaluate.py`: Scripts for radial and directional profile comparison between real and generated PSDs
-- `GANtry49.ipynb`: Main Jupyter notebook for training and analysis
-- `ModelDATAfinal.mat`: Dataset of real slip PSDs with corresponding conditional parameters (L, W, Dmean, Mw, Dep, Nx, Nz)
+- `generator.py`, `discriminator.py`: Model architecture definitions with origin symmetry enforcement
+- `losses.py`: Custom loss functions including power-law decay, symmetry, and smoothness constraints
+- `data_utils.py`, `fit_psd_utils.py`: Data loading, normalization, and PSD fitting utilities used throughout training pipeline
 
 **To run training:**
 ```bash
 python train.py
 ```
-Or open `GANtry49.ipynb` in Jupyter to run all steps interactively.
 
-**Outputs:**
-- Best model checkpoint: `best_generator.keras`
-- Visual and quantitative comparison of real vs generated PSDs
-- Application-ready PSD generation conditioned on tectonic parameters
 
 ### Chapter 9: A 2D Investigation of Cracked Medium Effects on Physics-Based Simulations
-This chapter includes representative SPECFEM2D simulations performed for investigating how the inclusion of cracked media (damage zones) impacts wave propagation behavior and simulation accuracy.
+This chapter includes representative SPECFEM 2D simulations performed for investigating how the inclusion of cracked media (faults and fault zones) impacts wave propagation behavior and simulation accuracy.
 
 **Folder contents:**
 - `SPECFEM2D_cracked_model/`: Contains sample input files:
