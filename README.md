@@ -192,11 +192,19 @@ This chapter includes codes used for developing the cGAN model to estimate PSD o
 - `generator.py`, `discriminator.py`: Model architecture definitions with origin symmetry enforcement
 - `losses.py`: Custom loss functions including power-law decay, symmetry, and smoothness constraints
 - `data_utils.py`, `fit_psd_utils.py`: Data loading, normalization, and PSD fitting utilities used throughout training pipeline
+- `lgenerator.keras`: Trained Generator Model
 
-**To run training:**
-```bash
-python train.py
+**To run the model:**
+```python
+import tensorflow as tf
+generator = tf.keras.models.load_model('generator.keras', compile=False)
 ```
+- Inputs:
+  - `z`: Latent vector of shape `(1, 100)`
+  - `cond`: Conditional vector of shape `(1, 10)` — includes parameters: L, W, Nx, Nz, Dmean, Mw, H, kcx, kcy, gamma
+  - `kx`, `kz`: Wavenumber arrays reshaped to shape `(1, H*W)`
+- Output:
+  - A predicted PSD array (padded) of shape `(H, W, 1)`, with symmetry constraints enforced
 
 
 
