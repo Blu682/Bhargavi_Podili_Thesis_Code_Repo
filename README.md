@@ -5,7 +5,7 @@ This repository contains the chapter-wise code used in the thesis. Each folder b
 
 ```
 Bhargavi_Podili_Thesis_Code_Repo/
-├── Chapter1_LR/
+
 ├── Chapter2_Seismic Zone Map/
 ├── Chapter3_V-by-H ground motion model/
 ├── Chapter4_Alternative ground motion models/
