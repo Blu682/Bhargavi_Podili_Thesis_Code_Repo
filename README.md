@@ -34,11 +34,13 @@ This research work presented in this chapter is published and can be referenced 
 Publication link: [View Publication](https://link.springer.com/article/10.1007/s00024-023-03329-4)
 
 
+
+
 ### Chapter 3: A Vertical-to-Horizontal Spectral Ratio Model for India
 This research work presented in this chapter is published and can be referenced at:
 
 **"A Vertical-to-Horizontal Spectral Ratio Model for India"**  
-Google Scholar link: [View Publication](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1C7dL7YAAAAJ&citation_for_view=1C7dL7YAAAAJ:IjCSPb-OGe4C)
+Publication link: [View Publication](https://www.sciencedirect.com/science/article/abs/pii/S0267726121004826)
 
 **Folder contents:**
 - `Model source data/`: Refer to Appendix tables A1, A2 and A3 of thesis
@@ -59,11 +61,15 @@ Google Scholar link: [View Publication](https://scholar.google.com/citations?vie
   - `T`: Periods (s)
   - `VbyHSa`: V/H spectral ratio at each period
 
+
+
+
+
 ### Chapter 4: Alternative Regional Ground Motion Models for Western Himalayas
 This research work presented in this chapter is published and can be referenced at:
 
 **"Alternative Regional Ground Motion Models for Western Himalayas"**  
-Google Scholar link: [View Publication](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1C7dL7YAAAAJ&citation_for_view=1C7dL7YAAAAJ:W7OEmFMy1HYC)
+Publication link: [View Publication](https://www.sciencedirect.com/science/article/abs/pii/S0267726123000507)
 
 **Folder contents:**
 - `Model source data/`: Refer to Appendix tables A1, A2 and A3 of thesis
@@ -90,11 +96,13 @@ Google Scholar link: [View Publication](https://scholar.google.com/citations?vie
   - `Sa`: Spectral acceleration (g)
 
 
+
+
 ### Chapter 5: Spectral Ground Motion Models for Himalayas using Transfer Learning Technique
 This research work presented in this chapter is published and can be referenced at:
 
 **"Spectral Ground Motion Models for Himalayas using Transfer Learning Technique"**  
-Google Scholar link: [View Publication](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1C7dL7YAAAAJ&citation_for_view=1C7dL7YAAAAJ:Se3iqnhoufwC)
+Publication link: [View Publication](https://www.tandfonline.com/doi/abs/10.1080/13632469.2024.2353261)
 
 **Folder contents:**
 - `data/`: Network parameters stored internally
@@ -115,6 +123,9 @@ Google Scholar link: [View Publication](https://scholar.google.com/citations?vie
 [T, SA] = BJR2024_SA(FAS, Tsig);
 ```
 
+
+
+
 ### Chapter 6: A Deep Learning Prediction Model for On-Site Earthquake Early Warning System in India
 This chapter proposes a deep learning model for application in the EEWS, as discussed in:
 
@@ -130,6 +141,9 @@ This chapter proposes a deep learning model for application in the EEWS, as disc
 python deployment.py
 ```
 This executes a test input with 8 EEW features (`PGA`, `PGD`, `Fp`, `Tsig`, `Ia`, `CAV`, `vs30`, `dir`) corresponding to the 3s P-wave of the time history and returns the spectral accelratio of the entire ground motion time history.
+
+
+
 
 ### Chapter 7: Estimating Deterministic Seismic Source Parameters for Varied Tectonics, Fault Mechanisms and Regions
 This chapter focuses on building a consistent parameter dataset for deterministic seismic source modeling across regions, based on tectonic regime, faulting mechanism, and observed seismicity.
@@ -168,6 +182,8 @@ This chapter focuses on building a consistent parameter dataset for deterministi
   - `Mw`, `Lat`, `Lon`, `Tectonics`, `FM`, `Region`
     
 
+
+
 ### Chapter 8: A Physics-Informed GAN Model for Estimating the Stochastic Slip Distribution
 This chapter includes codes used for developing the cGAN model to estimate PSD of stochastic fault slip distributions, based on physics constraints.
 
@@ -181,6 +197,8 @@ This chapter includes codes used for developing the cGAN model to estimate PSD o
 ```bash
 python train.py
 ```
+
+
 
 
 ### Chapter 9: A 2D Investigation of Cracked Medium Effects on Physics-Based Simulations
