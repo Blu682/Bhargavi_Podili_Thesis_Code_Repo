@@ -192,7 +192,7 @@ This chapter includes codes used for developing the cGAN model to estimate PSD o
 - `generator.py`, `discriminator.py`: Model architecture definitions with origin symmetry enforcement
 - `losses.py`: Custom loss functions including power-law decay, symmetry, and smoothness constraints
 - `data_utils.py`, `fit_psd_utils.py`: Data loading, normalization, and PSD fitting utilities used throughout training pipeline
-- `lgenerator.keras`: Trained Generator Model
+- `generator.keras`: Trained Generator Model
 
 **To run the model:**
 ```python
