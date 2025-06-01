@@ -163,14 +163,6 @@ This chapter includes code and models used for developing a Conditional Generati
 - `GANtry49.ipynb`: Main Jupyter notebook for training and analysis
 - `ModelDATAfinal.mat`: Dataset of real slip PSDs with corresponding conditional parameters (L, W, Dmean, Mw, Dep, Nx, Nz)
 
-**Key features:**
-- Origin-symmetry enforced generator architecture
-- Physics-based losses that enforce:
-  - Power-law decay in PSD spectra
-  - Centered peak around (kx=0, kz=0)
-  - Smoothness and physical realism in slip field
-- Supports exponential moving average (EMA), TTUR, and spectral normalization
-
 **To run training:**
 ```bash
 python train.py
