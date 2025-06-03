@@ -74,8 +74,8 @@ Publication link: [View Publication](https://www.sciencedirect.com/science/artic
 **Folder contents:**
 - `Model source data/`: Refer to Appendix tables A1, A2 and A3 of thesis
 - `code/`: MATLAB scripts for regional horizontal ground motion prediction:
-  - `BRnsc_2023.m`: Combined NSC-HIM regional model
-  - `BRhybrid_2022.m`: Hybrid model developed from PSHA-compatible curves
+  - `BRnsc_2023.m`: NSC-HIM regional model
+  - `BRhybrid_2022.m`: Hybrid model 
 
 **Model Data:**
 - `Models_SaH.xlsx` contains the regression input and fitted outputs for horizontal ground motion models used in Chapter 4.
