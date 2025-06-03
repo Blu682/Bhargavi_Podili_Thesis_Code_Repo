@@ -78,9 +78,8 @@ Publication link: [View Publication](https://www.sciencedirect.com/science/artic
   - `BRhybrid_2022.m`: Hybrid model 
 
 **Model Data:**
-- `Models_SaH.xlsx` contains the regression input and fitted outputs for horizontal ground motion models used in Chapter 4.
-- `Models_VbyH.xlsx` includes the corresponding V/H spectral ratio data and model estimates for comparison and residual analysis.
-
+- `Models_SaH.xlsx` contains the functional forms, model coefficients and other quantitative metrics of the four GMMs derived for SaH.
+- `Models_VbyH.xlsx` includes the corresponding V/H spectral ratio model coefficients.
 **To run the models:**
 ```matlab
 [T, Sa1] = BRnsc_2023(Mw, R, H, Sc);    % NSC-HIM model
