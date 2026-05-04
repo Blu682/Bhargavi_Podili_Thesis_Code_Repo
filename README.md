@@ -23,9 +23,11 @@ Bhargavi_Podili_Thesis_Code_Repo/
 - Run code inside each folder by following instructions in its `README.md`.
 
 ---
+---
 
 ## Chapter Index
 
+---
 
 ### Chapter 2: Seismic Zone Map for India Based on Cluster Analysis of Uniform Hazard Response Spectra
 This research work presented in this chapter is published and can be referenced at:
@@ -34,6 +36,7 @@ This research work presented in this chapter is published and can be referenced 
 Publication link: [View Publication](https://link.springer.com/article/10.1007/s00024-023-03329-4)
 
 
+---
 
 
 ### Chapter 3: A Vertical-to-Horizontal Spectral Ratio Model for India
@@ -62,7 +65,7 @@ Publication link: [View Publication](https://www.sciencedirect.com/science/artic
   - `VbyHSa`: V/H spectral ratio at each period
 
 
-
+---
 
 
 ### Chapter 4: Alternative Regional Ground Motion Models for Western Himalayas
@@ -95,6 +98,7 @@ Publication link: [View Publication](https://www.sciencedirect.com/science/artic
   - `Sa`: Spectral acceleration (g)
 
 
+---
 
 
 ### Chapter 5: Spectral Ground Motion Models for Himalayas using Transfer Learning Technique
@@ -123,6 +127,7 @@ Publication link: [View Publication](https://www.tandfonline.com/doi/abs/10.1080
 ```
 
 
+---
 
 
 ### Chapter 6: A Deep Learning Prediction Model for On-Site Earthquake Early Warning System in India
@@ -142,6 +147,7 @@ python deployment.py
 This executes a test input with 8 EEW features (`PGA`, `PGD`, `Fp`, `Tsig`, `Ia`, `CAV`, `vs30`, `dir`) corresponding to the 3s P-wave of the time history and returns the spectral accelratio of the entire ground motion time history.
 
 
+---
 
 
 ### Chapter 7: Estimating Deterministic Seismic Source Parameters for Varied Tectonics, Fault Mechanisms and Regions
@@ -181,6 +187,7 @@ Publication link: [View Publication](https://academic.oup.com/gji/advance-articl
   - `Mw`, `Lat`, `Lon`, `Tectonics`, `FM`, `Region`
     
 
+---
 
 
 ### Chapter 8: A Physics-Informed GAN Model for Estimating the Stochastic Slip Distribution
@@ -206,6 +213,7 @@ generator = tf.keras.models.load_model('generator.keras', compile=False)
   - A predicted PSD array (padded) of shape `(H, W, 1)`, with symmetry constraints enforced
 
 
+---
 
 
 ### Chapter 9: A 2D Investigation of Cracked Medium Effects on Physics-Based Simulations
@@ -230,3 +238,5 @@ This chapter includes representative SPECFEM 2D simulations performed for invest
 - Time snapshots of wave propagation
 - Differences in waveform energy, travel time, and path scattering
 - Insight into the physical role of fault zone damage in crustal wavefield modeling
+
+---
