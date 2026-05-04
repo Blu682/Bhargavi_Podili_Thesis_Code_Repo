@@ -126,10 +126,10 @@ Publication link: [View Publication](https://www.tandfonline.com/doi/abs/10.1080
 
 
 ### Chapter 6: A Deep Learning Prediction Model for On-Site Earthquake Early Warning System in India
-This chapter proposes a deep learning model for application in the EEWS, as discussed in:
+This chapter proposes a deep learning model for application in the EEWS, and it can be referenced at:
 
-**"A Deep Learning Prediction Model for On-Site Earthquake Early Warning System in India"**  
-*Under review (Round 2), Journal of Seismology*
+**"A deep learning prediction model for on-site earthquake early warning system in India"**  
+Publication link: [View Publication](https://link.springer.com/article/10.1007/s10950-026-10395-3)
 
 **Folder contents:**
 - `deployment.py`: Python script for loading the trained EEW model and making real-time predictions from seismic input features
@@ -145,10 +145,10 @@ This executes a test input with 8 EEW features (`PGA`, `PGD`, `Fp`, `Tsig`, `Ia`
 
 
 ### Chapter 7: Estimating Deterministic Seismic Source Parameters for Varied Tectonics, Fault Mechanisms and Regions
-This chapter focuses on building a consistent parameter dataset for deterministic seismic source modeling across regions, based on tectonic regime, faulting mechanism, and observed seismicity.
+This chapter focuses on building a consistent parameter dataset for deterministic seismic source modeling across regions, based on tectonic regime, faulting mechanism, and observed seismicity. It can be referenced at:
 
-**"Estimating Deterministic Seismic Source Parameters for Varied Tectonics, Fault Mechanisms and Regions"**  
-*Under review, Geophysical Journal International*
+**"A unified mixed-effects framework for earthquake source-parameter scaling across tectonics, fault mechanisms, seismic regions and finite-fault inversion characteristics"**  
+Publication link: [View Publication](https://academic.oup.com/gji/advance-article/doi/10.1093/gji/ggag149/8659265)
 
 **Folder contents:**
 - `DataBase_Meta.xlsx`: Metadata for curated source parameter database corresponding to the FFMs of SRCMOD
